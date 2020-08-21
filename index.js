@@ -42,7 +42,6 @@ app.get('/calendario', (req, res) => {
     var title = app.get('appName')+" | Calendario"
     res.render('calendario.ejs', {title: title} )
 })
-
 // Levanta el servidor
 app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`)
